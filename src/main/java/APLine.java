@@ -1,6 +1,5 @@
 public class APLine
 {
-  private double slope;
   private int a;
   private int b;
   private int c;
@@ -8,10 +7,9 @@ public class APLine
       a = A;
       b = B;
       c = C;
-      slope = double(-a)/double(b);
   }
   public double getSlope(){
-      return slope;
+      return (-double(a))/(double(b));
   }
   public boolean isOnLine(int x, int y){
       if((a*x)+(b*y)+(c)==0){
